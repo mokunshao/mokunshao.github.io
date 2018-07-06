@@ -18,8 +18,8 @@ author: Mo Kunshao
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mokunshao.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-lang: en
-timezone: UTC
+lang: zh-CN
+timezone: UTC+8
 exclude:
   - Gemfile
   - Gemfile.lock
