@@ -15,6 +15,7 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 ```
 
+
 ```html
 <div id="archives">
 {% for category in site.categories %}
