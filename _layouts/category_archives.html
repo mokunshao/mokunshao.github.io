@@ -1,37 +1,21 @@
 ---
 layout: default
 ---
-<div class="home">
 
-  <h1 class="page-heading">Archive of {{ page.type }} '{{ page.title | escape }}'</h1>
-
-  {% capture site_lang %}{{ site.lang | default: "en" }}{% endcapture %}
-
-  <ul class="post-archives">
-    {% for post in page.posts %}
-      {% capture post_lang %}{{ post.lang | default: site_lang }}{% endcapture %}
-      {% capture lang %}{% if post_lang != site_lang %}{{ post_lang }}{% endif %}{% endcapture %}
-
-      <li>
-        <span class="post-meta">
-          {{ post.date | date: "%b %-d, %Y" }}
-          {% if post.categories != empty or post.tags != empty %}
-            {% include category_links.html categories=post.categories tags=post.tags %}
-          {% endif %}
-          {% if post.external-url %}
-            • <a href="{{ post.url | relative_url }}">Permalink</a>
-          {% endif %}
-        </span>
-
-        <h2>
-          {% if post.external-url %}
-            <a class="post-link" href="{{ post.external-url }}">{{ post.title | escape }} &rarr;</a>
-          {% else %}
-            <a class="post-link" href="{{ post.url | relative_url }}"{% if lang != empty %} lang="{{ lang }}"{% endif %}>{{ post.title | escape }}</a>
-          {% endif %}
-        </h2>
-      </li>
+<div id="archives">
+{% for category in site.categories %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div id="#{{ category_name | slugize }}"></div>
+    <p></p>
+    
+    <h3 class="category-head">{{ category_name }}</h3>
+    <a name="{{ category_name | slugize }}"></a>
+    {% for post in site.categories[category_name] %}
+    <article class="archive-item">
+      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+    </article>
     {% endfor %}
-  </ul>
-
+  </div>
+{% endfor %}
 </div>
