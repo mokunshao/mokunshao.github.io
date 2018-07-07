@@ -28,6 +28,9 @@ markdown: kramdown
 sass:
   style: compressed
 
+paginate_path: /posts/:num/
+paginate: 5
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
