@@ -1,3 +1,1 @@
-Super lightweight Jekyll theme [ultralight](https://github.com/kotet/ultralight)  
-[Twitter](https://twitter.com/kotetttt)
-| [GitHub](https://github.com/kotet)
+© Mo Kunshao - Powered by [Jekyll](https://jekyllrb.com/) & [ultralight](https://github.com/kotet/ultralight)
