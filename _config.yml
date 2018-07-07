@@ -28,8 +28,8 @@ markdown: kramdown
 sass:
   style: compressed
 
-paginate_path: /posts/:num/
 paginate: 5
+paginate_path: /page/:num/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
