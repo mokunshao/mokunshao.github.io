@@ -6,8 +6,6 @@ title: HTTP 的请求与响应
 
 HTTP，全称 HyperText Transfer Protocol，中文名为超文本传输协议，这个协议采用一种明文的方式来传输我们的内容，没有任何的加密。几乎所有网页都采用 HTTP 协议或者 HTTPS 协议。目前 HTTP 协议的最新版本为 HTTP/2。
 
-<!-- more -->
-
 ## HTTP 的请求
 
 每当我们访问一个网页，我们都在向这个网站的服务器发送请求（request），请求的方式有八种：`GET`、`HEAD`、`POST`、`PUT`、`DELETE`、`TRACE`、`OPTIONS` 和 `CONNECT`。
@@ -28,7 +26,7 @@ Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7
 
 请求报文包括以下几个部分：
 
-1. **Start line** 
+### 1. Start line
 
 Start line 在请求报文的第一行，主要包括请求方法、请求路径和协议及其版本号。
 
@@ -36,7 +34,7 @@ Start line 在请求报文的第一行，主要包括请求方法、请求路径
 GET / HTTP/1.1
 ```
 
-2. **Headers**
+### 2. Headers
 
 Headers 的基本结构是` Key: value1`，Headers 可分为 General headers，Request headers 和 Entity headers。具体内容请参见[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages)
 。
@@ -52,13 +50,13 @@ Accept-Encoding: gzip, deflate, br
 Accept-Language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7
 ```
 
-3. **Body**
+### 3. Body
 
 除了`POST`以外，并非所有 Request 都有 Body，例如`GET`、`HEAD`、`DELETE` 和 `OPTIONS` 的 Request 通常没有 Body。
 
 Request 的 Body 可以分为两类：Single-resource bodies 和 Multiple-resource bodies，具体内容请参见[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages)。
 
-### 通过 Chrome 的开发者工具查看 HTTP 请求内容
+### 通过 Chrome 的开发者工具查看 HTTP 请求的内容
 
 1. 按键盘的`f12`键。
 
@@ -99,7 +97,7 @@ Transfer-Encoding: chunked
 
 响应报文包括以下几个部分：
 
-1. **Status line** 
+### 1. Status line
 
 Status line 在响应报文的第一行，主要包括协议及其版本号、状态码和状态信息。
 
@@ -107,7 +105,7 @@ Status line 在响应报文的第一行，主要包括协议及其版本号、�
 HTTP/1.1 200 OK
 ```
 
-2. **Headers**
+### 2. Headers
 
 Headers 的基本结构是` Key: value1`，Headers 可分为 General headers，Response headers 和 Entity headers。具体内容请参见[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages)。
 
@@ -131,15 +129,14 @@ X-Ua-Compatible: IE=Edge,chrome=1
 Transfer-Encoding: chunked
 ```
 
-3. **Body**
+### 3. Body
 
 并非所有 Response 都有 Body，例如状态码为`201`和`204`的 Response 通常没有 Body。
 
 Response 的 Body 可以分为三类：Single-resource bodies consisting of a single file of **known** length，Single-resource bodies consisting of a single file of **unknown** length 和 Multiple-resource bodies。具体内容请参见[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages)
 。
 
-
-### 通过 Chrome 的开发者工具查看 HTTP 响应内容
+### 通过 Chrome 的开发者工具查看 HTTP 响应的内容
 
 1. 按键盘的`f12`键。
 
