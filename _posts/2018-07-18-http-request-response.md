@@ -8,7 +8,7 @@ HTTP，全称 HyperText Transfer Protocol，中文名为超文本传输协议，
 
 ## HTTP 的请求
 
-每当我们访问一个网页，我们都在向这个网站的服务器发送请求（request），请求的方式有八种：`GET`、`HEAD`、`POST`、`PUT`、`DELETE`、`TRACE`、`OPTIONS` 和 `CONNECT`。
+每当我们访问一个网页，我们都在向这个网站的服务器发送请求（Request），请求的方式有八种：`GET`、`HEAD`、`POST`、`PUT`、`DELETE`、`TRACE`、`OPTIONS` 和 `CONNECT`。
 
 下面是一个请求报文：
 
@@ -70,7 +70,7 @@ Request 的 Body 可以分为两类：Single-resource bodies 和 Multiple-resour
 
 ## HTTP 的响应
 
-当一个网站的服务器接收到我们的请求，服务器会向我们作出响应（response）。
+当一个网站的服务器接收到我们的请求，服务器会向我们作出响应（Response）。
 
 下面是一个响应报文：
 
