@@ -38,7 +38,7 @@ GET / HTTP/1.1
 
 ### 2. Headers
 
-Headers 的基本结构是` Key: value1`，Headers 可分为 General headers，Request headers 和 Entity headers。具体内容请参见[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages)
+Headers 的基本结构是`Key : value`，Headers 可分为 General headers，Request headers 和 Entity headers。具体内容请参见[MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages)
 。
 
 ```
@@ -166,7 +166,7 @@ curl http://www.example.com
 curl -G http://www.example.com
 ```
 
-不过我推荐使用这个命令，执行后可以看到 header data 的同时略去 progress meter 或者 error messages：
+不过我推荐使用以下这个命令，执行后可以看到 header data 的同时略去 progress meter 或者 error messages：
 
 ```
 curl -v -s http://www.example.com
@@ -188,7 +188,7 @@ curl -d "要提交的内容" http://www.example.com
 curl -X POST -d "要提交的内容" http://www.example.com
 ```
 
-不过我推荐使用这个命令，执行后可以看到 header data 的同时略去 progress meter 或者 error messages：
+不过我推荐使用以下这个命令，执行后可以看到 header data 的同时略去 progress meter 或者 error messages：
 
 ```
 curl -d "要提交的内容" -v -s http://www.example.com
