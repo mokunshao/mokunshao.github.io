@@ -1,10 +1,12 @@
 ---
-title:HTTP 的请求与响应
+title: HTTP 的请求与响应
 ---
 
 ## HTTP 是什么
 
 HTTP，全称 HyperText Transfer Protocol，中文名为超文本传输协议，这个协议采用一种明文的方式来传输我们的内容，没有任何的加密。几乎所有网页都采用 HTTP 协议或者 HTTPS 协议。目前 HTTP 协议的最新版本为 HTTP/2。
+
+<!-- more -->
 
 ## HTTP 的请求
 
