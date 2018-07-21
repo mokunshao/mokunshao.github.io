@@ -25,7 +25,7 @@ title: 四种元素
 
 可替换元素列表：[https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)
 
-> 参考文档：
+> 参考资料：
 >
 > [https://www.jianshu.com/p/2524609fab2f](https://www.jianshu.com/p/2524609fab2f)
 >
@@ -53,7 +53,7 @@ HTML 元素大多数都是行内元素或块级元素。
 
 块状元素列表：[https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
 
-> 参考文档：
+> 参考资料：
 >
 > [https://developer.mozilla.org/zh-CN/docs/Web/HTML/Inline_elemente](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Inline_elemente)
 >
