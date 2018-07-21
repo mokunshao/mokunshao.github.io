@@ -16,6 +16,8 @@ title: 四种元素
 >
 > [http://www.runoob.com/html/html-elements.html](http://www.runoob.com/html/html-elements.html)
 >
+>[https://developer.mozilla.org/zh-CN/docs/Glossary/%E7%A9%BA%E5%85%83%E7%B4%A0](https://developer.mozilla.org/zh-CN/docs/Glossary/%E7%A9%BA%E5%85%83%E7%B4%A0)
+>
 > [https://developer.mozilla.org/en-US/docs/Glossary/Empty_element](https://developer.mozilla.org/en-US/docs/Glossary/Empty_element)
 
 
