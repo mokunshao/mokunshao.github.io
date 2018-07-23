@@ -20,7 +20,7 @@ title: HTML 常用元素
 
 今天我们要探讨的元素有`<iframe>`、`<a>`、`<form>`、`<input>`、`<button>`、`<select>`、`<textarea>`和`<table>`。这里会有他们的简单用法。
 
-### <iframe> 元素
+### `<iframe>` 元素
 
 `<iframe>` 元素快速入门：[https://htmlreference.io/element/iframe/](https://htmlreference.io/element/iframe/)
 
@@ -38,7 +38,7 @@ title: HTML 常用元素
 <a target=xxx href="http://www.baidu.com">Baidu</a>
 ```
 
-### <a> 元素
+### `<a>` 元素
 
 `<a>` 元素快速入门：[https://htmlreference.io/element/a/](https://htmlreference.io/element/a/)
 
@@ -99,7 +99,7 @@ href=JavaScript:alert("你好");
 > [https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a)
 > [http://www.w3school.com.cn/tags/att_a_href.asp](http://www.w3school.com.cn/tags/att_a_href.asp)
 
-### <form> 元素、<input> 元素、<button> 元素、<label> 元素、 <select> 元素以及 <textarea> 元素
+### `<form>` 元素、`<input>` 元素、`<button>` 元素、`<label>` 元素、 `<select>` 元素以及 `<textarea>` 元素
 
 把他们放在一起是因为这几个元素通常是和 `<form>` 元素一起出现的。
 
@@ -211,7 +211,7 @@ submit 是 `<input>` 元素唯一可以提交表单的type：
 <textarea style="resize: none; width: 100px;" name="爱好"></textarea>
 ```
 
-### <table> 元素
+### `<table>` 元素
 
 `<table>` 元素是用来构建表格的。
 
