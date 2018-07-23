@@ -18,9 +18,9 @@ title: HTML 常用元素
 
 一个基本的网页有什么元素？如果你还不知道的话，请看这里：[https://htmlreference.io/base/](https://htmlreference.io/base/)
 
-今天我们要探讨的元素有`<iframe>`、`<a>`、`<form>`、`<input>`、`<button>`、`<select>`、`<textarea>`和`<table>`。这里会有他们的简单用法。
+今天我们要探讨的元素有`<iframe>`、`<a>`、`<form>`、`<input>`、`<button>`、`<label>`、`<select>`、`<textarea>`和`<table>`。这里会有他们的简单用法。
 
-### `<iframe>` 元素
+### 1. `<iframe>` 元素
 
 `<iframe>` 元素快速入门：[https://htmlreference.io/element/iframe/](https://htmlreference.io/element/iframe/)
 
@@ -32,19 +32,19 @@ title: HTML 常用元素
 
 示例： 
 
-```
+```html
 <iframe name=xxx src="#"></iframe>
 <a target=xxx href="http://www.qq.com">QQ</a>
 <a target=xxx href="http://www.baidu.com">Baidu</a>
 ```
 
-### `<a>` 元素
+### 2. `<a>` 元素
 
 `<a>` 元素快速入门：[https://htmlreference.io/element/a/](https://htmlreference.io/element/a/)
 
 `<a>` 元素使用手册：[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)
 
-#### 1. target 属性的四个值：
+#### 2.1 target 属性的四个值：
 
 1. `_self` 当前页面加载
      
@@ -54,15 +54,15 @@ title: HTML 常用元素
      
 4. `_top` 加载响应进入顶层浏览上下文。如果没有 parent 框架或者浏览上下文，此选项的行为方式与 `_self` 相同。
 
-#### 2. download 属性:
+#### 2.2 download 属性:
 
 添加该属性后点击链接会保存为本地文件。
 
-#### 3. href 属性:
+#### 2.3 href 属性:
 
 绝对URL（或：绝对路径）
 
-```
+```html
 href="http://www.example.com/index.htm"
 
 href="http://www.example.com/index.htm#bottom"
@@ -76,20 +76,20 @@ href="//www.example.com/index.htm"
 
 相对URL（或：相对路径）
 
-```
+```html
 href="index.htm"
 ```
 
 锚 URL
 
-```
+```html
 href="#top"
 <!-- 上面这个不发送请求 -->
 ```
 
 伪协议
 
-```
+```html
 href=JavaScript:alert("你好");
 <!-- 伪协议是历史遗留问题 -->
 ```
@@ -99,7 +99,7 @@ href=JavaScript:alert("你好");
 > [https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a)
 > [http://www.w3school.com.cn/tags/att_a_href.asp](http://www.w3school.com.cn/tags/att_a_href.asp)
 
-### `<form>` 元素、`<input>` 元素、`<button>` 元素、`<label>` 元素、 `<select>` 元素以及 `<textarea>` 元素
+### 3. `<form>` 元素、`<input>` 元素、`<button>` 元素、`<label>` 元素、 `<select>` 元素以及 `<textarea>` 元素
 
 把他们放在一起是因为这几个元素通常是和 `<form>` 元素一起出现的。
 
@@ -127,7 +127,7 @@ href=JavaScript:alert("你好");
 
 示例：
 
-```
+```html
 <form action="user" method="post">
     <input type="text" name="username">
     <input type="password" name="password">
@@ -137,25 +137,25 @@ href=JavaScript:alert("你好");
 
 submit 是 `<input>` 元素唯一可以提交表单的type：
 
-```
+```html
 <input type="submit" value="注册">
 ```
 
 提交表单也可以通过 `<button>` 元素实现：
 
-```
+```html
 <button>注册</button>
 ```
 
 下面这个点击后无反应，不要这样写：
 
-```
+```html
 <input type="button" value="注册">
 ```
 
 如果想要点击选项的文字也能选中，给文字加个 `<label>` 元素：
 
-```
+```html
 <input type="checkbox" id="xxx"><label for="xxx">同意</label>
 
 <label for="xxx">用户名</label><input type="text" id="xxx" name="username">
@@ -165,7 +165,7 @@ submit 是 `<input>` 元素唯一可以提交表单的type：
 
 另一种写法是在`<label>` 元素内嵌套 `<input>` 元素：
 
-```
+```html
 <label><input type="checkbox">同意</label>
 
 <label>用户名<input type="text" name="username"></label>
@@ -175,7 +175,7 @@ submit 是 `<input>` 元素唯一可以提交表单的type：
 
 多选示例：
 
-```
+```html
 喜欢的水果
 <label><input type="checkbox" name="fruit" value="orange">橘子</label>
 <label><input type="checkbox" name="fruit" value="banana">香蕉</label>
@@ -185,7 +185,7 @@ submit 是 `<input>` 元素唯一可以提交表单的type：
 
 单选示例：
 
-```
+```html
 爱我
 <label><input type="radio" name="loveme" value="yes">Yes</label>
 <label><input type="radio" name="loveme" value="no">No</label>
@@ -195,7 +195,7 @@ submit 是 `<input>` 元素唯一可以提交表单的type：
 
 `<select>` 元素示例：
 
-```
+```html
 <select name="group multiple>
     <option value="">-</option>
     <option value="1">第一组</option>
@@ -207,11 +207,11 @@ submit 是 `<input>` 元素唯一可以提交表单的type：
 
 `<textarea>` 元素示例：
 
-```
+```html
 <textarea style="resize: none; width: 100px;" name="爱好"></textarea>
 ```
 
-### `<table>` 元素
+### 4. `<table>` 元素
 
 `<table>` 元素是用来构建表格的。
 
@@ -223,7 +223,7 @@ submit 是 `<input>` 元素唯一可以提交表单的type：
 
 示例：
 
-```
+```html
 <table border=1 style="border-collapse:collapse;">    
     <colgroup>        
         <col width=100>        
