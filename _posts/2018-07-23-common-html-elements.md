@@ -18,7 +18,7 @@ title: HTML 常用元素
 
 一个基本的网页有什么元素？如果你还不知道的话，请看这里：[https://htmlreference.io/base/](https://htmlreference.io/base/)
 
-今天我们要探讨的元素有`<iframe>`、`<a>`、`<form>`、`<input>`、`<button>`、`<label>`、`<select>`、`<textarea>`和`<table>`。这里会有他们的简单用法。
+今天我们要探讨的元素有`<iframe>`、`<a>`、`<form>`、`<input>`、`<button>`、`<label>`、`<select>`、`<textarea>`和`<table>`。这里会有它们的简单用法。
 
 ### 1. `<iframe>` 元素
 
