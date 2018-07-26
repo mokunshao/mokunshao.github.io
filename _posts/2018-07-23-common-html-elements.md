@@ -181,7 +181,7 @@ submit 是 `<input>` 元素唯一可以提交表单的type：
 <label><input type="checkbox" name="fruit" value="banana">香蕉</label>
 ```
 
- `<input>` 元素的 type 属性的值为 radio，且 name 属性相同时，是多选。
+ `<input>` 元素的 type 属性的值为 radio，且 name 属性相同时，是单选。
 
 单选示例：
 
