@@ -1,16 +1,16 @@
 ---
-title: HTML 常用元素
+title: HTML 常用元素的简单用法
 ---
 
 ## 写在前面
 
-强烈推荐[https://htmlreference.io](https://htmlreference.io)！
+推荐[https://htmlreference.io](https://htmlreference.io)。
 
 它通过大量示例和注释帮助你快速上手某个元素，对新手非常友好。
 
 不想一上来就看文档，可以先看看这个。每个元素的页面都有相关的 MDN 链接。
 
-想学 CSS 的话还有这个：[https://cssreference.io/](https://cssreference.io/), 也是非常赞！
+想学 CSS 的话还有这个：[https://cssreference.io/](https://cssreference.io/)。
 
 <!-- more -->
 
@@ -99,9 +99,7 @@ href=JavaScript:alert("你好");
 > [https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a)
 > [http://www.w3school.com.cn/tags/att_a_href.asp](http://www.w3school.com.cn/tags/att_a_href.asp)
 
-### 3. `<form>` 元素、`<input>` 元素、`<button>` 元素、`<label>` 元素、 `<select>` 元素以及 `<textarea>` 元素
-
-把他们放在一起是因为这几个元素通常是和 `<form>` 元素一起出现的。
+### 3. 与表单相关的元素
 
 `<form>` 元素快速入门：[https://htmlreference.io/element/form/](https://htmlreference.io/element/form/)
 
