@@ -55,7 +55,7 @@ title: 一些常用的传统布局和居中方法
 
 1. 若元素是单行文本, 则可设置 `line-height` 等于父元素高度。
 
-2. 若元素是行内块级元素, 可以使用 `display: inline-block;` 来搭配 `vertical-align: middle;`。
+2. 若元素是行内块级元素, 可以使用 `display: inline-block;` 来搭配 `vertical-align: middle;` 或 `vertical-align: top;`。
 
 3. 行内元素可以设置 `padding-top` 和 `padding-bottom` 为相同的值。
 
