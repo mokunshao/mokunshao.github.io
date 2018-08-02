@@ -59,4 +59,4 @@ title: 一些常用的传统布局和居中方法
 
 3. 行内元素可以设置 `padding-top` 和 `padding-bottom` 为相同的值。
 
-4. `display:table-cell` 搭配 `vertical-align: middle`。
+4. `display:table-cell;` 搭配 `vertical-align: middle;`。
