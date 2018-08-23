@@ -30,7 +30,7 @@ title: CSS 宽度和高度
 
 这里研究的情况是一个块级元素内包含一个块级元素。
 
-阻止 `margin` 合并可以在设置父元素的上下方向的 `padding` 或者上下方向的 `border`  或者 `overflow:hidden;`。
+阻止 `margin` 合并可以设置父元素的上下方向的 `padding` 或者上下方向的 `border`  或者 `overflow:hidden;`。
 
 ## 两种居中方法
 
