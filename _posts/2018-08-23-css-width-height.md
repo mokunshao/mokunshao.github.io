@@ -26,7 +26,7 @@ title: CSS 宽度和高度
 
 不要用 `height` 设置高度，容易出 Bug。设置高度的话要设置 `padding-top` 和 `padding-bottom`。
 
-##阻止 margin 合并的方法
+## 阻止 margin 合并的方法
 
 这里研究的情况是一个块级元素内包含一个块级元素。
 
