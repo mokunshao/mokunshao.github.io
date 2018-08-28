@@ -82,3 +82,9 @@ Number.prototype.__proto__ === Object.prototype
 String.prototype.__proto__ === Object.prototype
 Function.prototype.__proto__ === Object.prototype
 ```
+
+```javascript
+Function.prototype === Object.__proto__
+Function.prototype === Number.__proto__
+Function.prototype === String.__proto__
+```
