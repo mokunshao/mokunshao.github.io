@@ -148,7 +148,7 @@ a.filter(???).map(???) // [4,16,36,64]
 ```javascript
 // 答案一：
 var a = [1,2,3,4,5,6,7,8,9]
-a.filter(function(n){if(n%2===0);return n}).map(function(x){return x*x}) // [4,16,36,64]
+a.filter(function(n){if(n%2===0){return n}}).map(function(x){return x*x}) // [4,16,36,64]
 
 // 答案二：
 var a = [1,2,3,4,5,6,7,8,9]
@@ -160,7 +160,7 @@ a.filter( (n)=>n%2===0 ).map(  (n)=> n*n  ) // [4,16,36,64]
 ```javascript
 var a = [1,2,3,4,5,6,7,8,9]
 a.reduce(???,???)
-计算所有奇数的和
+1. 计算所有奇数的和
 ```
 ```javascript
 // 答案一：
