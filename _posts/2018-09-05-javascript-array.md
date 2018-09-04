@@ -66,35 +66,35 @@ var f = new function('a','b','return a+b')
 
 ## Array 对象内置方法
 
-- forEach
+- `forEach`
 
 无返回值
 
-- sort
+- `sort`
 
 改变自身的值
 
-- join
+- `join`
 
-- concat
+- `concat`
 
-- map
+- `map`
 
 映射
 
-和forEach几乎一样
+和 `forEach` 几乎一样
 
-相比forEach有返回值，返回一个新数组
+相比 `forEach` 有返回值，返回一个新数组
 
-- filter
+- `filter`
 
 过滤
 
-跟map很像
+跟 `map` 很像
 
-- reduce
+- `reduce`
 
-## map 可以用 reduce 表示
+## `map` 可以用 `reduce` 表示
 
 ```javascript
 a=[1,2,3]
@@ -106,7 +106,7 @@ a.reduce(function(arr,n){
 // 返回 [2,4,6]
 ```
 
-## filter 可以用 reduce 表示
+## `filter` 可以用 `reduce` 表示
 
 ```javascript
 a=[1,2,3,4,5,6,7,8,9,10]
@@ -121,6 +121,7 @@ a.reduce(function(arr,n){
 ## 题目
 
 1. 第一题
+
 ```
 var students = ['小明','小红','小花'] 
 var scores = { 小明: 59, 小红: 99, 小花: 80 } 
