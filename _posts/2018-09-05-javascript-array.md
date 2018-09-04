@@ -94,7 +94,7 @@ var f = new function('a','b','return a+b')
 
 - `reduce`
 
-## `map` 可以用 `reduce` 表示
+## map 可以用 reduce 表示
 
 ```javascript
 a=[1,2,3]
@@ -106,7 +106,7 @@ a.reduce(function(arr,n){
 // 返回 [2,4,6]
 ```
 
-## `filter` 可以用 `reduce` 表示
+## filter 可以用 reduce 表示
 
 ```javascript
 a=[1,2,3,4,5,6,7,8,9,10]
