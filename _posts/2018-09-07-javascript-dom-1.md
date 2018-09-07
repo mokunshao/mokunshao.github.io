@@ -110,4 +110,4 @@ title: DOM 学习笔记一
 
 ## 如何获取一个div标签的所有同级（兄弟）标签？
 
-![https://gomakethings.com/how-to-get-an-elements-siblings-with-vanilla-javascript/](https://gomakethings.com/how-to-get-an-elements-siblings-with-vanilla-javascript/)
+[https://gomakethings.com/how-to-get-an-elements-siblings-with-vanilla-javascript/](https://gomakethings.com/how-to-get-an-elements-siblings-with-vanilla-javascript/)
