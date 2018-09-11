@@ -69,16 +69,17 @@ Node.prototype.getSiblings = function(){
 }
 ```
 
-方法二：添加新的接口。第二种叫做「无侵入」。
+方法二：添加新的接口。这叫做「无侵入」。
 
 ```javascript
-window.jQuery = function(nodeOrSelector) {
-  let nodes = {
-    0: nodeOrSelector,
-    length: 1
+window.jQuery = function(Selector) {
+  let nodes = document.querySelectorAll(Selector)
+  nodes.addClass = function(classes) {
+    // write some code...
   }
-  nodes.addClass = function(classes) {}
-  nodes.text = function(text) {}
+  nodes.text = function(text) {
+    // write some code...
+  }
   return nodes
 }
 
