@@ -37,8 +37,12 @@ function getSiblings(node){
 
 ```javascript
 var jQuery = {}
-jQuery.getSiblings = function(node){ // write some code...}
-jQuery.setText = function(node){ // write some code...}
+jQuery.getSiblings = function(node){ 
+    // write some code...
+}
+jQuery.setText = function(node){
+    // write some code...
+}
 
 // 调用函数时
 jQuery.getSiblings(node)
