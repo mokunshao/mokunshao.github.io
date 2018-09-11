@@ -59,7 +59,7 @@ node.getSiblings()
 $node.getSiblings()
 ```
 
-jQuery 的属性和方法保存于 jQuery.prototype。不过这里不采用这种方法。
+事实上， jQuery 的属性和方法保存于 jQuery.prototype。不过这里不采用这种方法。
 
 方法一：扩展 Node 接口。直接在 Node.prototype 上加函数。可能的风险是覆盖原生的属性和方法。
 
