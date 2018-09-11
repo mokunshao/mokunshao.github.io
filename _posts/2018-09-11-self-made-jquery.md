@@ -1,5 +1,5 @@
 ---
-tiltle:自制简易 jQuery
+title: 自制简易 jQuery
 ---
 
 ## 需求
