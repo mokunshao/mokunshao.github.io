@@ -80,7 +80,7 @@ let ab = (function add(){
 ab(); //1
 ab(); //2
 ```
-## 3. 利用闭包实现 onclick 事件传递参数。
+### 3. 利用闭包实现 onclick 事件传递参数。
 
 以下代码会使得点击不同的 li 都返回同一个值，这不是我们想要的结果。
 
@@ -117,7 +117,7 @@ for(let i=0; i<lis.length; i++){
 }
 ```
 
-## 4. 封装对象的私有属性和私有方法
+### 4. 封装对象的私有属性和私有方法
 
 ```javascript
 var Car = (function(){
