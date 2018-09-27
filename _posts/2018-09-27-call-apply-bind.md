@@ -38,7 +38,7 @@ ken.getName.bind(tom)(); // tom
 
 ## call
 
-call 可以接受多个参数。
+除了 this，call 可以接受多个参数。
 
 语法：
 
@@ -57,7 +57,7 @@ add.call(add, 5, 3); //8
 
 ## apply
 
-与 call 不同，apply 接受一个数组作为参数。
+除了 this，apply 接受一个数组作为参数。
 
 语法：
 
@@ -80,7 +80,7 @@ bind()方法会创建一个新函数，称为绑定函数。
 
 这个函数可以有预设的参数，也可以不预设参数，等调用的时候再传参。
 
-bind 是返回对应函数，便于稍后调用；apply 、call 则是立即调用 。
+bind 是返回对应函数，便于稍后调用，而apply 、call 则是立即调用 。
 
 语法：
 ```javascript
