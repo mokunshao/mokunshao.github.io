@@ -25,16 +25,16 @@ title: 写一个符合规范的 HTML 文件
 <html>
 <head>
     <title>我的页面</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <link rel="stylesheet" type="text/css" href="./print.css" media="print">
-    <link rel="stylesheet" type="text/css" href="./mobile.css" media="(max-width:500px)">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="/mobile.css" media="(max-width:500px)">
 </head>
 <body>
     <svg height="500" width="500">
         <circle cx="100" cy="100" r="50" stroke="black" stroke-width="2" fill="red"/>
     </svg>
-    <script type="text/javascript" src="./main.js"></script>
-    <script type="text/javascript" src="./gbk.js" charset="GBK"></script>
+    <script type="text/javascript" src="/main.js"></script>
+    <script type="text/javascript" src="/gbk.js" charset="GBK"></script>
 </body>
 </html>
 ```
