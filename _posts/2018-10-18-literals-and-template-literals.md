@@ -73,7 +73,7 @@ let a = [1,2,3]
 通过内置构造函数生成：
 
 ```javascript
-let a = new Array(1，2，3)
+let a = new Array(1,2,3)
 ```
 
 ### 对象字面量
