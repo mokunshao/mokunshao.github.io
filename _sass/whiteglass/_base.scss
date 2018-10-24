@@ -23,12 +23,14 @@ body {
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  word-wrap: break-word;
 }
 
-
+table {
+  width: 100%;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -38,15 +40,6 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
-}
-
-
-
-/**
- * `main` element
- */
-main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
 
@@ -95,6 +88,10 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
+
+  code {
+    font-size: inherit;
+  }
 }
 
 
@@ -107,22 +104,15 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: darken($brand-color, 10%);
   }
 
   &:hover {
     color: $text-color;
     text-decoration: underline;
   }
-
-  .social-media-list &:hover {
-    text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
-  }
 }
+
 
 
 /**
@@ -132,7 +122,7 @@ blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.125);
+  font-size: 18px;
   letter-spacing: -1px;
   font-style: italic;
 
@@ -144,14 +134,27 @@ blockquote {
 
 
 /**
+ * Rules
+ */
+hr {
+  height: 4px;
+  margin: $spacing-unit / 2 0;
+  border: 0;
+  background-color: $grey-color-light;
+}
+
+
+
+/**
  * Code formatting
  */
 pre,
 code {
-  @include relative-font-size(0.9375);
+  font-family: $monospace-font-family;
+  font-size: 13px;
   border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  background-color: #eef;
+  border-radius: 0;
+  background-color: lighten($grey-color-light, 5%);
 }
 
 code {
@@ -161,6 +164,7 @@ code {
 pre {
   padding: 8px 12px;
   overflow-x: auto;
+  word-wrap: normal;
 
   > code {
     border: 0;
@@ -200,55 +204,4 @@ pre {
   content: "";
   display: table;
   clear: both;
-}
-
-
-
-/**
- * Icons
- */
-
-.svg-icon {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    fill: #{$grey-color};
-    padding-right: 5px;
-    vertical-align: text-top;
-}
-
-.social-media-list {
-  li + li {
-    padding-top: 5px;
-  }
-}
-
-
-
-/**
- * Tables
- */
-table {
-  margin-bottom: $spacing-unit;
-  width: 100%;
-  text-align: $table-text-align;
-  color: lighten($text-color, 18%);
-  border-collapse: collapse;
-  border: 1px solid $grey-color-light;
-  tr {
-    &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
-    }
-  }
-  th, td {
-    padding: ($spacing-unit / 3) ($spacing-unit / 2);
-  }
-  th {
-    background-color: lighten($grey-color-light, 3%);
-    border: 1px solid darken($grey-color-light, 4%);
-    border-bottom-color: darken($grey-color-light, 12%);
-  }
-  td {
-    border: 1px solid $grey-color-light;
-  }
 }
