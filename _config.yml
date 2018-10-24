@@ -16,7 +16,7 @@
 title: Mo kunshao's Blog
 author: Mo Kunshao
 description:
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://mokunshao.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 lang: zh-CN
 timezone: UTC+8
