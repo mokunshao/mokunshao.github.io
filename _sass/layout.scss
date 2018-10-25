@@ -114,7 +114,8 @@
 #container {
 	margin:0 auto;
 	max-width: 730px;
-	padding: 0 1.5rem;
+  padding: 0 1.5rem;
+  overflow: auto;
 }
 
 #header {
@@ -200,8 +201,8 @@ img[title="Emerald"] {
   }
 
 code {
-  color: darken($text-color, 35%);
-  background-color: darken($background-color, 35%);
+  color: lighten($text-color, 35%);
+  // background-color: lighten($background-color, 35%);
 }
 
 /* Set the vertical rhythm (and padding-left) for lists inside post content */
