@@ -204,28 +204,12 @@ img[title="Emerald"] {
 //   background-color: lighten($background-color, 35%);
 // }
 
-pre,
 code {
   font-size: 13px;
   border: 1px solid grey;
   border-radius: 0;
   background-color: lighten(grey, 5%);
-}
-
-code {
   padding: 1px 5px;
-}
-
-pre {
-  padding: 8px 12px;
-  overflow-x: auto;
-  word-wrap: normal;
-
-  > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-  }
 }
 
 /* Set the vertical rhythm (and padding-left) for lists inside post content */
