@@ -1,7 +1,6 @@
 ---
 layout: page
-title: "About"
-permalink: /about/
+title: About Emerald
 ---
 
 To be continued...
