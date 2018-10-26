@@ -135,7 +135,7 @@
   h1 {
   	font-family: sans-serif; //Emerald logo font
     font-weight: 600;
-    text-shadow: 3px 3px 3px #bdbdbd;
+    text-shadow: 2px 2px 2px #bdbdbd;
   }
   &:after {
   	display: block;
@@ -234,6 +234,7 @@ code {
   span {
     background-color: darken($background-color, 5%);
     color: $text-color;
+    margin: 5px;
   }
   a:hover {
     background-color: lighten($main-color, 5%);
