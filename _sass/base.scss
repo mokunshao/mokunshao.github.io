@@ -38,6 +38,7 @@ a {
 	color: $main-color;
 	text-decoration: none;
 	font-weight: 700;
+	overflow-wrap: break-word;
 	&:hover,
 	&:focus {
 		color: darken($main-color, 5%);
