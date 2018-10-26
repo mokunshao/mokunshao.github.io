@@ -2,11 +2,11 @@
 
 // -- Put custom style under this point -- //
 
-div#warp{
+#warp{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    div#container{
+    #container{
         flex-grow: 1;
     }
 }
