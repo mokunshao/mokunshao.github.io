@@ -8,7 +8,7 @@ author:
   url:
 
 # Build settings
-baseurl: '/'
+baseurl: /blog
 markdown: kramdown
 source: .
 destination: /_site
