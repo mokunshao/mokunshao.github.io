@@ -1,14 +1,14 @@
 # Site settings
 title: Notebook
 description:
-url: https://mokunshao.github.io
+url: https://mokunshao.github.io/
 author:
   name: "Mo Kunshao"
   email:
   url:
 
 # Build settings
-baseurl: https://mokunshao.github.io
+baseurl: /
 markdown: kramdown
 source: .
 destination: ./_site
