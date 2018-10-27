@@ -8,7 +8,7 @@ author:
   url:
 
 # Build settings
-baseurl: /
+baseurl: https://mokunshao.github.io
 markdown: kramdown
 source: .
 destination: ./_site
