@@ -23,7 +23,10 @@ $text-color: #222222;
 /*- Base settings -*/
 
 html {
-	font-size: 18px;
+	font-size: 16px;
+	@media (min-width: 940px) {
+		font-size: 18px;
+	}
 	background-color: $background-color;
 	color: $text-color;
 }
