@@ -1,7 +1,7 @@
 # Site settings
 title: Notebook
 description:
-url: "https://mokunshao.github.io"
+url: https://mokunshao.github.io
 author:
   name: "Mo Kunshao"
   email:
@@ -11,7 +11,7 @@ author:
 baseurl: /
 markdown: kramdown
 source: .
-destination: /_site
+destination: ./_site
 permalink: /:title
 paginate: 8
 paginate_path: /page:num/
