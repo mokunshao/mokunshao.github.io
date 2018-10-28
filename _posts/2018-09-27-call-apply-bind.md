@@ -113,3 +113,44 @@ add.bind(add)(5,3); // 8
 1. call 和 apply接受参数的方式不一样，call 可以接受多个参数，apply 接受一个数组作为参数。
 
 2. bind 是返回对应函数，便于稍后调用，而 apply 、call 则是立即调用 。
+
+## 解决一个 Bug
+
+```javascript
+bindEvents: function () {
+    function () {
+        this.form.addEventListener('submit',  function(e) {
+            e.preventDefault();
+            this.saveMessage();
+        })
+    }
+},
+```
+
+this.saveMessage 中的 this 是表单元素，不符合我们的预期。
+
+解决方法一：
+
+```javascript
+bindEvents: function () {
+    function () {
+        this.form.addEventListener('submit',  (e) => { // 箭头函数不会改你的this
+            e.preventDefault();
+            this.saveMessage();
+        })
+    }
+},
+```
+
+解决方法二：
+
+```javascript
+bindEvents: function () {
+    function () {
+        this.form.addEventListener('submit',  function(e) {
+        e.preventDefault();
+        this.saveMessage();
+        }.bind(this))
+    }
+},
+```
