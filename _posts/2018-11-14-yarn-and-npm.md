@@ -48,20 +48,28 @@ yarn install
 
 ## 删除依赖
 
+```
 yarn remove [package]
 // npm uninstall [package]
+```
 
 ## 列出依赖
 
+```
 yarn list
 // npm list
+```
 
 ## 运行 script
 
+```
 yarn run [script]
 // npm run [script]
+```
 
 ## 更新依赖
 
+```
 yarn upgrade [package]
 // npm update [package]
+```
