@@ -14,7 +14,7 @@ npm 上有两个关于 Sass 的包：分别是 Sass 和 node-Sass ，使用前�
 
 定义的变量名前要加上美元符号。
 
-```SCSS
+```scss
 $title-font: normal 24px/1.5 'Open Sans', sans-serif;
 $cool-red: #F44336;
 
@@ -28,7 +28,7 @@ h1.title {
 
 @mixins 与 @include 搭配使用。
 
-```SCSS
+```scss
 @mixin square($size, $color) {
   width: $size;
   height: $size;
@@ -44,7 +44,7 @@ h1.title {
 
 使用 @extend 可以实现继承，将一个选择器的 CSS 属性继承到另一个。。
 
-```SCSS
+```scss
 .dialog-button {
   box-sizing: border-box;
   color: #ffffff;
@@ -62,7 +62,7 @@ h1.title {
 
 ## 嵌套
 
-```SCSS
+```scss
 nav {
   ul {
     margin: 0;
@@ -84,7 +84,7 @@ nav {
 
 使用 @import 引入其他 .Sass 或 .SCSS 文件
 
-```SCSS
+```scss
 @import 'reset';
 
 body {
@@ -97,7 +97,7 @@ body {
 
 可以使用 `+`，`-`，`*`，`/`，`%` 运算符。
 
-```SCSS
+```scss
 aside{
   width: 300px / 960px * 100%;
 }
