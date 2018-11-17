@@ -45,7 +45,7 @@ h1.title {
 使用 @extend 可以实现继承，将一个选择器的 CSS 属性继承到另一个。。
 
 ```scss
-.dialog-button {
+%dialog-button {
   box-sizing: border-box;
   color: #ffffff;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -54,7 +54,7 @@ h1.title {
 }
 
 .confirm {
-  @extend .dialog-button;
+  @extend %dialog-button;
   background-color: #87bae1;
   float: left;
 }
