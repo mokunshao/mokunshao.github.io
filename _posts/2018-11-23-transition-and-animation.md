@@ -36,17 +36,14 @@ animation 是以上属性的缩写。
 
 ## 别人的作品
 
-3d效果：http://js.jirengu.com/sizaq
+3d效果：[http://js.jirengu.com/sizaq](http://js.jirengu.com/sizaq)
 
-加载: http://js.jirengu.com/tawuf
+加载：[http://js.jirengu.com/tawuf](http://js.jirengu.com/tawuf)
 
-歌词效果: http://js.jirengu.com/gewof
+歌词效果：[http://js.jirengu.com/gewof](http://js.jirengu.com/gewof)
 
-打字机效果
-http://js.jirengu.com/cobeq
+打字机效果：[http://js.jirengu.com/cobeq](http://js.jirengu.com/cobeq)
 
-3D正方体
-http://js.jirengu.com/divih
+3D正方体：[http://js.jirengu.com/divih](http://js.jirengu.com/divih)
 
-正方体形变
-http://js.jirengu.com/hobij
+正方体形变：[http://js.jirengu.com/hobij](http://js.jirengu.com/hobij)
