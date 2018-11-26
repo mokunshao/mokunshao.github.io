@@ -42,7 +42,9 @@ h1.title {
 
 ## 继承
 
-使用 @extend 可以实现继承，将一个选择器的 CSS 属性继承到另一个。。
+使用 @extend 可以实现继承，将一个选择器的 CSS 属性继承到另一个。
+
+从编译结果看，@extend 比 @include 要省代码。
 
 ```scss
 %dialog-button {
