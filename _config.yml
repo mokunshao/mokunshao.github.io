@@ -13,7 +13,7 @@ markdown: kramdown
 source: .
 destination: ./_site
 permalink: /:year/:month/:day/:title/
-paginate_path: /posts/:num/
+paginate_path: /pages/:num/
 paginate: 8
 
 # Default values
