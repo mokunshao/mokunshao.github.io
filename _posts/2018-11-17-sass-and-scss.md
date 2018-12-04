@@ -44,7 +44,9 @@ h1.title {
 
 使用 @extend 可以实现继承，将一个选择器的 CSS 属性继承到另一个。
 
-从编译结果看，@extend 比 @include 要省代码。
+从编译结果看，@extend 比 @include 要省代码。前者使用 `,` 给不同选择器进行连接以使用共同的属性，后者给不同选择器单独添加属性。
+
+`%` 叫 placeholder（占位符），不使用的话，编译后不生成代码。
 
 ```scss
 %dialog-button {
