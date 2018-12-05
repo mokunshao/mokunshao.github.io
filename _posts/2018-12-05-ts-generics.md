@@ -42,7 +42,28 @@ function returnIt<T extends HasLength>(arg: T): T {
 }
 
 returnIt(['12',34])
+returnIt([12,34])
+returnIt(['12','34'])
+
 returnIt<any[]>(['12',34])
 returnIt<number[]>([12,34])
 returnIt<string[]>(['12','34'])
+
+returnIt<Array<any>>(['12',34])
+returnIt<Array<number>>([12,34])
+returnIt<Array<string>>(['12','34'])
+```
+
+## 定义数组时使用泛型
+
+通常这样定义数组：
+
+```typescript
+let arr: number[] = [1,2,3];
+```
+
+可以使用泛型的方式去定义：
+
+```typescript
+let arr: Array<number> = [1,2,3];
 ```
