@@ -20,7 +20,7 @@ title: 项目部署到 Github Pages 前的配置
 
 ```javaScript
 module.exports = {
-  baseUrl: process.env.NODE_ENV === "production" ? "./" : "/"
+  publicPath: process.env.NODE_ENV === "production" ? "./" : "/"
 };
 ```
 
