@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+permalink: /about/
 ---
 
-To be continued...
+This page is under construction.

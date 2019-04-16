@@ -1,45 +1,60 @@
-/*
- * Emerald is a simple blog theme built for Jekyll.
- */
+$base-font-size: 16px !default;
+$text-color: black;
+$border-color: lightgray;
 
-/*- Base reset -*/
-
-* {
-	box-sizing: border-box;
+body {
+    color: $text-color;
+    margin: 0;
+    word-break: break-word;
+    font-family: Helvetica,sans-serif;
 }
 
-html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, img {
-  margin: 0;
-  padding: 0;
-  border: 0;
+ul {
+    padding-left: 10px;
+    margin: 10px;
 }
 
-/*- Base color -*/
-
-$main-color: #008A3C;
-$background-color: #FDFDFD;
-$text-color: #222222;
-
-/*- Base settings -*/
-
-html {
-	font-size: 16px;
-	@media (min-width: 940px) {
-		font-size: 18px;
-	}
-	background-color: $background-color;
-	color: $text-color;
+li {
+    margin-bottom: 10px;
 }
 
+article {
+    padding: 0 20px 0 20px;
+}
 
-/*- Link -*/
-a {
-	color: $main-color;
-	text-decoration: none;
-	font-weight: 700;
-    word-break: break-all;
-	&:hover,
-	&:focus {
-		color: darken($main-color, 5%);
-	}
+header,footer {
+    padding: 10px;
+}
+
+.home {
+    padding: 1em;
+}
+
+.site-title {
+    color: $text-color;
+    font-weight: bold; 
+}
+
+.post-counter {
+    font-weight: bold; 
+}
+
+.post-info {
+    margin: auto;
+}
+
+table {
+    th,td {
+        border-bottom: 1px solid $border-color;
+        border-right: 1px double $border-color;
+    }
+}
+
+.content-wrapper {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    * {
+        max-width: 100%;
+    }
 }
