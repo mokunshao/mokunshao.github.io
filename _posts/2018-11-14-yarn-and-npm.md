@@ -35,7 +35,7 @@ yarn add [package] --dev
 ## 安装全局依赖 
 
 ```
-yarn add global [package]
+yarn global add [package]
 // npm install -g [package]
 ```
 
