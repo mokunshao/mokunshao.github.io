@@ -46,7 +46,7 @@ componentDidMount
 
 # 用户点击按钮调用 setState 时会更新哪些钩子
 
-componentShouldUpdate
+shouldComponentUpdate
 
 componentWillUpdate（deprecated，不再建议使用）
 
