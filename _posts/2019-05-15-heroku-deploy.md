@@ -35,3 +35,28 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 ```
+
+对于前后端连载的项目，可以的使用在 heroku 上对前端部分进行 build。首先删除在前端部分的 `node_modules`，然后在 `package.json` 文件添加名为 `heroku-postbuild` 的 script。
+
+```json
+"scripts": {
+  "start": "node server.js",
+  "client-install": "yarn --cwd client install",
+  "client": "yarn --cwd client start",
+  "server": "nodemon server.js",
+  "dev": "concurrently \"yarn server\" \"yarn client\"",
+  "heroku-postbuild":" YARN_PRODUCTION=false yarn --cwd client install && yarn --cwd client build"
+}
+````
+
+yarn 与 npm 的配置略有不同。
+
+```json
+YARN_PRODUCTION=false
+NPM_CONFIG_PRODUCTION=false
+```
+
+```json
+yarn --cwd client install && yarn --cwd client build
+npm install --prefix client && npm run build --prefix client
+```
