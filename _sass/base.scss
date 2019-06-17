@@ -3,58 +3,65 @@ $text-color: black;
 $border-color: lightgray;
 
 body {
-    color: $text-color;
-    margin: 0;
-    word-break: break-word;
-    font-family: Helvetica,sans-serif;
+  color: $text-color;
+  margin: 0;
+  word-break: break-word;
+  font-family: Helvetica, sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 ul {
-    padding-left: 10px;
-    margin: 10px;
+  padding-left: 10px;
+  margin: 10px;
 }
 
 li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 article {
-    padding: 0 20px 0 20px;
+  padding: 0 20px 0 20px;
 }
 
-header,footer {
-    padding: 10px;
+header,
+footer {
+  padding: 10px;
 }
 
 .home {
-    padding: 1em;
+  padding: 1em;
 }
 
 .site-title {
-    color: $text-color;
-    font-weight: bold; 
+  color: $text-color;
+  font-weight: bold;
 }
 
 .post-counter {
-    font-weight: bold; 
+  font-weight: bold;
 }
 
 .post-info {
-    margin: auto;
+  margin: auto;
 }
 
 table {
-    th,td {
-        border-bottom: 1px solid $border-color;
-        border-right: 1px double $border-color;
-    }
+  th,
+  td {
+    border-bottom: 1px solid $border-color;
+    border-right: 1px double $border-color;
+  }
 }
 
 .content-wrapper {
-    max-width: 800px;
-    margin-right: auto;
-    margin-left: auto;
-    * {
-        max-width: 100%;
-    }
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  * {
+    max-width: 100%;
+  }
 }
