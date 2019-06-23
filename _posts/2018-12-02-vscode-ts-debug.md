@@ -1,5 +1,5 @@
 ---
-title: 配置 typescript 调试
+title: VS Code 配置 TypeScript 调试
 ---
 
 在调试之前先安装 typescript 和 ts-node。
