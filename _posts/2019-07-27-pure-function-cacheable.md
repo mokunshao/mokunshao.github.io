@@ -2,7 +2,7 @@
 title: 纯函数的可缓存性
 ---
 
-例子：
+例子一：
 
 ```javascript
 function test(fn) {
@@ -35,7 +35,7 @@ console.log(add(1, 3));
 // 4来自缓存池
 ```
 
-优化后的例子：
+优化后的例子一：
 
 ```javascript
 function test(fn) {
@@ -66,4 +66,50 @@ console.log(add(1, 3));
 // 3来自缓存池
 // 4
 // 4来自缓存池
+```
+
+例子二：
+
+```javascript
+function memorize(fn) {
+  var cache = {};
+  return function() {
+    var key = JSON.stringify(Array.prototype.slice.call(arguments));
+    console.log(key)
+    if (key in cache) {
+      console.log("缓存了");
+      return cache[key];
+    } else {
+      console.log("没缓存");
+      return (cache[key] = fn.apply(this, arguments));
+    }
+  };
+}
+
+function add(a, b) {
+  return a + b;
+}
+
+var memorizeAdd = memorize(add);
+
+console.log(memorizeAdd(1, 2));
+console.log(memorizeAdd(1, 2));
+
+function propValue(obj) {
+  return obj.value;
+}
+
+var memorizePropValue = memorize(propValue);
+
+console.log(memorizePropValue({ value: 1 }));
+console.log(memorizePropValue({ value: 1 }));
+
+function fibonacci(n) {
+  return n < 2 ? n : fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+fibonacci = memorize(fibonacci);
+
+console.log(fibonacci(100));
+
 ```
