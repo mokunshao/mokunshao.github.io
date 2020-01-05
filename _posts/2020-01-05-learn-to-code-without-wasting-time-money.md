@@ -2,7 +2,9 @@
 title: 学会编程，且不浪费时间和金钱
 ---
 
-> 本文翻译自 Aleksandr Hovhannisyan 的文章：《Learn to Code Without Wasting Time & Money》，原文：[Learn to Code Without Wasting Time & Money | Aleksandr Hovhannisyan](https://aleksandrhovhannisyan.github.io/blog/dev/learn-to-code-without-wasting-time-and-money/)
+本文翻译自 Aleksandr Hovhannisyan 的文章：《Learn to Code Without Wasting Time & Money》，原文： [Learn to Code Without Wasting Time & Money | Aleksandr Hovhannisyan](https://aleksandrhovhannisyan.github.io/blog/dev/learn-to-code-without-wasting-time-and-money/)
+
+___
 
 我记得在高中时读过一个短篇小说，讲的是一位有抱负的作家投入大量时间和金钱购买了一支精美的钢笔和一本装帧华丽的笔记本，买了一张只有严肃作家才会坐的桌子，在书房里摆满了他从未读过的旧书，并对写作的前景做了白日梦。这张照片遗漏了任何有墨水的纸张，他什么都做了，就是没有动笔写作。
 
@@ -52,4 +54,4 @@ Udemy，Udacity，Lynda，Vertabelo Academy，Codeacademy Pro 等等。这些东
 
 以下是我曾经购买的两个 Udemy 课程，当时我认为它们是实现所有目标的关键（显然，是网络开发和游戏开发）：
 
-我两次都在大约 10% 进度时放弃了，因为我无聊得发疯了。我不是那种可以忍受坐在一堂又一堂课的前面，伴随着间歇性“现在你试试”练习的人，这些练习大部分都是非常琐碎的。我所做的任何事情都需要一个背景--一个我想要从事的真正相关、有趣和具有挑战性的项目。待办事项列表应用程序不适合我，因为它们不是我真正想要构建的东西。按照自己的方式制作游戏不是我在学习游戏开发时想做的事情。
+我两次都在大约 10% 进度时放弃了，因为我无聊得发疯了。我不是那种可以忍受坐在一堂又一堂课的前面，伴随着间歇性“现在你试试”练习的人，这些练习大部分都是非常琐碎的。我所做的任何事情都需要一个背景--一个我想要从事的真正相关、有趣和具有挑战性的项目。待办事项列表应用程序不适合我，因为它们不是我真正想要构建的东西。按照别人的方式制作游戏不是我在学习游戏开发时想做的事情。
