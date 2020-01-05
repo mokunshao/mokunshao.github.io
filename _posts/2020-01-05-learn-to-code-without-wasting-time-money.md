@@ -2,9 +2,7 @@
 title: 学会编程，且不浪费时间和金钱
 ---
 
-本文翻译自 Aleksandr Hovhannisyan 的文章：《Learn to Code Without Wasting Time & Money》，原文： [Learn to Code Without Wasting Time & Money | Aleksandr Hovhannisyan](https://aleksandrhovhannisyan.github.io/blog/dev/learn-to-code-without-wasting-time-and-money/)
-
-___
+> 本文翻译自 Aleksandr Hovhannisyan 的文章：《Learn to Code Without Wasting Time & Money》，原文：[Learn to Code Without Wasting Time & Money \| Aleksandr Hovhannisyan](https://aleksandrhovhannisyan.github.io/blog/dev/learn-to-code-without-wasting-time-and-money/)
 
 我记得在高中时读过一个短篇小说，讲的是一位有抱负的作家投入大量时间和金钱购买了一支精美的钢笔和一本装帧华丽的笔记本，买了一张只有严肃作家才会坐的桌子，在书房里摆满了他从未读过的旧书，并对写作的前景做了白日梦。这张照片遗漏了任何有墨水的纸张，他什么都做了，就是没有动笔写作。
 
