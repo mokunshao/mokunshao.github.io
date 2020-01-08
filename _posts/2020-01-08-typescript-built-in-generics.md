@@ -138,8 +138,75 @@ start({
 ```
 
 ## Required
+
+`Required<T>` 与 `Partial<T>` 相反，当 `Partial<T>` 让每个属性变得可选, `Required<T>` 让每个属性变成必须。
+
+```typescript
+type Container = {
+  width: number,
+  height: number, 
+  children?: Container[]
+}
+
+function getChildrenArea(parent: Required<Container>) {
+  let sum = 0;
+  for (let child of parent.children) {
+    sum = sum + (child.width * child.height)
+  }
+  return sum;
+}
+
+const mainContainer: Container = {
+  width: 200,
+  height: 100
+}
+
+getChildrenArea(mainContainer); // ❌ 报错，缺少 children 属性
+```
+
 ## NonNullable
+
+`NonNullable<T>` 帮你确保不会将 `null` 或 `undefined` 传递给函数。它会补充 `strictNullChecks` 编译器 flag，所以确保你是否要启用它。
+
+```typescript
+function print<T>(x: NonNullable<T>) {
+  console.log(x.toString());
+}
+
+print('Hello');
+print(2);
+print(null); // ❌ 报错
+print(undefined); // ❌ 报错
+```
+
 ## Pick
+
+使用 `Pick<T, K extends keyof T>`，你只需使用选定的属性列表，就可以从现有对象创建新类型。Lodash 的同名 pick 函数就是其用法的一个很好的例子：
+
+```typescript
+/**
+ * The pick function is generic as well. It has two generic types:
+ * - T ... the type of the object we want to pick props from
+ * - K ... a subset of all keys in T
+ *
+ * Our method signature takes an object of type T, the other parameters
+ * are collected in an array of type K.
+ *
+ * The return type is a subset of keys of T.
+ */
+declare function pick<T, K extends keyof T>(obj: T, ...propsToPick: K[]): Pick<T, K>;
+
+const point3D = {
+  x: 2,
+  y: 0,
+  z: 4
+}
+
+const point2D = pick(point3D, 'x', 'y'); // 返回类型 { x: number, y: number }
+```
+
+当与其他泛型类型（例如 `Exclude`）一起使用时，此类型特别有用。
+
 ## Record
 ## Extract
 ## Exclude
