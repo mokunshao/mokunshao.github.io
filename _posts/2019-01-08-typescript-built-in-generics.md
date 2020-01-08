@@ -1,5 +1,5 @@
 ---
-title: TypeScript\: 内置泛型
+title: 'TypeScript: 内置泛型'
 ---
 
 > 本文翻译自 stefan baumgartner 的 《TypeScript: Built-in generic types》，原文：[TypeScript: Built-in generic types](https://fettblog.eu/typescript-built-in-generics/)
