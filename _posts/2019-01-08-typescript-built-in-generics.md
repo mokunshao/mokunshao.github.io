@@ -25,9 +25,9 @@ TypeScript 附带大量内置泛型类型，可以简化你的开发工作流程
 
 ## Readonly
 
-JavaScript 中的 `const` 很棘手，因为它虽然意味着你不能将任何其他值重新分配给此变量，但是允许更改对象的属性。`Readonly` 内置类型有助于：
+JavaScript 中的 `const` 很狡猾，因为它虽然意味着你不能将任何其他值重新分配给此常量，但是允许更改对象的属性。`Readonly` 内置类型可以解决这个问题。
 
-```javascript
+```typescript
 type Point = {
   x: number,
   y: number
@@ -38,10 +38,20 @@ const p: Readonly<Point> = {
   y: 2
 };
 
-p.x = 5; // ⚡️ 编译错误!
+p.x = 5; // ❌ 编译错误!
 ```
 
 ## ReadonlyArray
+
+`ReadonlyArray` 允许我们在使用改变原始数组的数组函数时抛出错误。
+
+```typescript
+const values: ReadonlyArray<number> = [1, 2, 3, 4, 5];
+
+values.push(6); // ❌ 编译错误！这会使数组发生变化
+values.filter(x => x > 4); // ✅ 编译通过！filter 返回新数组
+```
+
 ## ReturnType
 ## Partial
 ## Required
