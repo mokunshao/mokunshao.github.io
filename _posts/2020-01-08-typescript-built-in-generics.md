@@ -208,6 +208,42 @@ const point2D = pick(point3D, 'x', 'y'); // 返回类型 { x: number, y: number 
 当与其他泛型类型（例如 `Exclude`）一起使用时，此类型特别有用。
 
 ## Record
+
+`Record<K, T>` 很有趣。有了它，你可以说每个键 K 都应该是 T 类型。有了它，你可以做以下事情：
+
+```typescript
+type Person = Record<'firstName' | 'lastName', string>
+```
+
+与 `{firstName：string，lastName：string}` 相同。或者类似于:
+
+```typescript
+type MetaInfo = {
+  title: string,
+  url: string
+}
+
+type Episodes = Record<string, MetaInfo>
+```
+
+它允许对象具有任何可能的键，但值类型为 MetaInfo。这与 `{[k：string]：MetaInfo}` 非常相似。
+
+到现在为止还好。但是，如果我们可以使用其他方法获得类似的结果，为什么还要使用 Record 类型呢？Record 在处理其他泛型类型时很有帮助。让我们看一下该示例：我们可以创建一个函数，将对象所有值转换为字符串表示形式：
+
+```typescript
+// 它将所有值转换为字符串。
+declare function allToString<T>(obj: T): Record<keyof T, string>;
+
+const person = {
+  firstName: 'Stefan',
+  lastName: 'Baumgartner',
+  age: Number.MAX_VALUE
+}
+
+// 现在 strPerson 中的所有属性都是字符串
+const strPerson = allToString(person);
+```
+
 ## Extract
 ## Exclude
 ## Omit
