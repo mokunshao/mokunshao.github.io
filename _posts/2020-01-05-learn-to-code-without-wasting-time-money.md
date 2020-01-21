@@ -1,5 +1,5 @@
 ---
-title: 学会编程，且不浪费时间和金钱
+title: 在不浪费时间和金钱的情况下学习编程
 ---
 
 > 本文翻译自 Aleksandr Hovhannisyan 的文章：《Learn to Code Without Wasting Time & Money》，原文：[Learn to Code Without Wasting Time & Money \| Aleksandr Hovhannisyan](https://aleksandrhovhannisyan.github.io/blog/dev/learn-to-code-without-wasting-time-and-money/)
