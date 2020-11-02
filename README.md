@@ -1,3 +1,7 @@
 This is my blog.
 
-[https://mokunshao.github.io](https://mokunshao.github.io)
+[mokunshao.js.org](https://mokunshao.js.org)
+
+[mokunshao.netlify.app](https://mokunshao.netlify.app)
+
+[mokunshao.vercel.app](https://mokunshao.vercel.app)
