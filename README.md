@@ -5,3 +5,7 @@ This is my blog.
 [mokunshao.netlify.app](https://mokunshao.netlify.app)
 
 [mokunshao.vercel.app](https://mokunshao.vercel.app)
+
+[mokunshao.pages.dev](https://mokunshao.pages.dev)
+
+[mokunshao.github.io](https://mokunshao.github.io)
